@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7wyhquyj1tgm"]
+
+[ext_resource type="Script" uid="uid://br3phugqgl3io" path="res://CharacterController/Components/CameraHandler/CameraHandler.gd" id="1_gfqar"]
+
+[node name="CameraHandler" type="Node3D"]
+script = ExtResource("1_gfqar")
+camera_distance = 0.0
+camera_angle = 0.0
+
+[node name="TwistPivot" type="Node3D" parent="."]
+
+[node name="PitchPivot" type="Node3D" parent="TwistPivot"]
+
+[node name="Camera Spring Arm" type="SpringArm3D" parent="TwistPivot/PitchPivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.32831e-10, 0, 7.27596e-11)
+spring_length = 0.0
+
+[node name="Camera3D" type="Camera3D" parent="TwistPivot/PitchPivot/Camera Spring Arm"]
+transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, 0, 0)
+current = true

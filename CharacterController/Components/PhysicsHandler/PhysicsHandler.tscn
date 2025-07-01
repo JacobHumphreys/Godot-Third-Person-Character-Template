@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://pohxs0pewumc"]
+
+[ext_resource type="Script" uid="uid://dievno20dw1uh" path="res://Scenes/Components/PhysicsHandler/PhysicsHandler.gd" id="1_0sfes"]
+
+[node name="PhysicsHandler" type="Node3D"]
+script = ExtResource("1_0sfes")
